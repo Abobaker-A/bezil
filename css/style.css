@@ -1,0 +1,161 @@
+* {
+  text-decoration: none !important;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.mainColor {
+  color: #00c3da !important;
+}
+.mainBg {
+  background-color: #00c3da !important;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #00c3da !important;
+  color: white;
+}
+.navbar-nav .nav-link {
+  color: white;
+  transition: 0.5s all;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.navbar-nav .nav-link:hover {
+  background-color: #00c3da !important;
+}
+.navIcon a:hover {
+  color: #00c3da !important;
+}
+.navIcon a {
+  transition: 0.5s all;
+}
+.control-Slider {
+  top: 40%;
+}
+.Prevv:hover i {
+  color: #00c3da !important;
+  transition: 0.3s all;
+  z-index: 1;
+}
+.Nextt:hover i {
+  color: #00c3da !important;
+  transition: 0.3s all;
+  z-index: 1;
+}
+.layericon1,
+.layericon2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+  background-color: rgba(255, 255, 255, 0.599);
+  transition: 0.5s all;
+}
+.Prevv:hover .layericon1 {
+  transform: translateX(0%);
+}
+.Nextt:hover .layericon2 {
+  transform: translateX(0%);
+}
+.carousel-indicators button {
+  height: 2px !important;
+  width: 40px !important;
+}
+.title h2 {
+  top: 15%;
+}
+.layerteam {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: all 0.3s;
+  background-color: #00c4dac2;
+}
+.item:hover .layerteam {
+  opacity: 1;
+  transform: translateY(0);
+}
+.title2 h2 {
+  top: 8%;
+  left: 5%;
+}
+.teampic {
+  width: 120px;
+  position: relative;
+  transform: translateY(50%);
+}
+#works .carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: #00c3da;
+}
+.carousel-control-prev {
+  left: -20% !important;
+}
+.carousel-control-next {
+  right: -20% !important;
+}
+#works i:hover {
+  color: #00c3da !important;
+  transition: all 0.3s;
+}
+textarea {
+  resize: none;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0.25rem rgba(3, 7, 14, 0.905) !important;
+  border: black;
+}
+.navIcon::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100px;
+  left: 0;
+  background-color: white;
+}
+.BESTval {
+  font-size: 15px !important;
+}
+/* //////////////////////Media/////////////////////////////// */
+@media (max-width: 990px) {
+   nav ul {
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+ nav a {
+    padding:5px 15px !important ;
+    color: black !important; 
+font-weight: 700 !important;
+ }
+ .navIcon::before {
+    display: none;
+ }
+  }
+
+@media (max-width: 1200px) {
+  #about .container {
+    width: 100% !important;
+    
+  }
+  #carouselExampleCaptions {
+    width: 75% !important;
+  }
+  .navbar-nav .nav-link:hover {
+    background-color: none !important;
+  }
+}
